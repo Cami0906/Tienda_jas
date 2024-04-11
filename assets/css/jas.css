@@ -21,7 +21,7 @@
 }
 
 .fondo-card-1,.fondo-card-2,.fondo-card-3,.fondo-card-4,.fondo-card-5,.fondo-card-6{
-    background-image: url("img/gris_oscuro.png") ;
+    background-image: url("../img/gris_oscuro.png") ;
     
     width: 140px;
     height: 150px;
@@ -79,4 +79,8 @@
 .caja-estadisticas{
     margin-top: 30%;
     
+}
+
+.caja-resumen-dia{
+    height: 200px !important;
 }
