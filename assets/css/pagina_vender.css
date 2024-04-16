@@ -1,0 +1,132 @@
+:root{
+    --color-gris:#e6e6e6;
+    --color-morado:#8600da;
+    --color-productos:#4002b4;
+    --color-letras:#080808;
+}
+
+
+.ayuda ul{
+    padding-left: 160px ;
+}
+
+.categoria{
+    border-radius: 0px 0px 10px !important;
+}
+
+.fondo-card-1{
+    background-image: url("../img/pan_frances1.png")  ;
+    
+    width: 140px;
+    height: 200px;
+}
+
+.producto-1{
+    background-color:var(--color-gris); 
+    color:var(--color-letras);
+    border:none
+}
+
+.fondo-card-2{
+    background-image: url("../img/pan_integral1.png") ;
+    
+    width: 140px;
+    height: 200px;
+}
+
+.producto-2{
+    background-color:var(--color-gris);
+    color:var(--color-letras);
+    border:none
+}
+
+.fondo-card-3{
+    background-image: url("../img/rollo_pk.png") ;
+    
+    width: 140px;
+    height: 200px;
+}
+
+.producto-3{
+    background-color:var(--color-gris);
+    color:var(--color-letras);
+    border:none
+}
+
+.fondo-card-4{
+    background-image: url("../img/roscon1.png") ;
+    
+    width: 140px;
+    height: 200px;
+}
+
+.producto-4{
+    background-color:var(--color-gris);
+    color:var(--color-letras);
+    border:none
+}
+
+.fondo-card-5{
+    background-image: url("../img/pan_integral2.png") ;
+    
+    width: 140px;
+    height: 200px;
+}
+
+.producto-5{
+    background-color:var(--color-gris);
+    color:var(--color-letras);
+    border:none
+}
+
+.fondo-card-6{
+    background-image: url("../img/pan-galleta1.png") ;
+    
+    width: 140px;
+    height: 200px;
+}
+
+.producto-6{
+    background-color:var(--color-gris);
+    color:var(--color-letras);
+    border:none
+}
+
+
+.barra-pedidos{
+    width: 500px !important;
+    height: 620px !important;
+    margin-top: 0px !important;
+    border: none;
+    border-radius: 25px;
+    background: #e0e0e0;
+    box-shadow:  -12px -12px 24px #bebebe,
+    12px 12px 24px #ffffff;
+}
+.linea{
+    height: 1px;
+    width: 400px;
+    background-color: #000;
+    margin-left: 50px;
+
+}
+
+.cantidades{
+    margin-left: 178px;
+}
+
+.linea3{
+    height: 0.8px;
+    width: 400px;
+    background-color: #000;
+    margin-left: 50px;
+
+}
+
+.mas_menos{
+    height: 40px !important;
+}
+
+.boton-pedido{
+    margin-right: 300px;
+}  

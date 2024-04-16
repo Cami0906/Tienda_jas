@@ -1,11 +1,13 @@
 :root{
     --color-gris:#e8e8e8
+    --color-morado:#8600da
+
 }
 
 
 
 .buscar{
-    background-color: var(--color-gris);
+    background-color: var(--color-gris) !important;
 }
 
 .buscar:hover{
@@ -51,9 +53,11 @@
     transform: rotate(90deg);
 }
 
+
+
 .barra-pedidos{
     width: 500px !important;
-    height: 600px !important;
+    height: 620px !important;
     margin-top: 0px !important;
 }
 
@@ -82,5 +86,62 @@
 }
 
 .caja-resumen-dia{
-    height: 200px !important;
+    height: 220px !important;
 }
+
+.grafico-dona{
+    width: 200px !important;
+    height: 200px !important;
+    margin-left: 100px;
+}
+
+
+.barra-pedidos{
+    width: auto !important;
+    height: auto !important;
+    margin-top: 0px !important;
+    border: none;
+}
+
+
+
+/*arreglos de la ventana emergente*/
+
+.bontonVentas{
+    height: 30px;
+}
+
+.perfil{
+    display: flex;
+    justify-content: flex-start;
+}
+.foto-perfil{
+    margin-left: 35%;
+    margin-top: 0px;
+}
+
+.caja{
+    height: 150px !important;
+    
+}
+.caja-precios{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.caja-estadisticas{
+    margin-top: 30%;
+    
+}
+
+.caja-resumen-dia{
+    height: 220px !important;
+}
+
+.grafico-dona{
+    width: 200px !important;
+    height: 200px !important;
+    margin-left: 60px;
+}
+
