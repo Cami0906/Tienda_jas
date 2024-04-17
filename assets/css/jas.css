@@ -1,6 +1,6 @@
 :root{
-    --color-gris:#e8e8e8
-    --color-morado:#8600da
+    --color-gris:#e8e8e8;
+    --color-morado:#8600da;
 
 }
 
@@ -103,8 +103,12 @@
     border: none;
 }
 
-
-
+.acordeonMenu{
+    background-color: var(--color-morado);
+}
+.acordeonMenu:hover{
+    background-color: var(--color-morado);
+}
 /*arreglos de la ventana emergente*/
 
 .bontonVentas{

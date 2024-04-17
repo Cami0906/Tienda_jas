@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
@@ -76,20 +76,21 @@
         <nav aria-label="..." class="d-flex justify-content-between">
             <ul class="ms-5  pagination pagination-sm categorias">
                 <li class="page-item " aria-current="page">
-                    <span class="page-link">Panes</span>
+                    <span class="page-link">Pan</span>
                 </li>
                 <li class="page-item"><a class="page-link" href="#">Bebidas calientes</a></li>
                 <li class="page-item"><a class="page-link" href="#">Jugos</a></li>
                 <li class="page-item"><a class="page-link" href="#">Postres</a></li>
-                <li class="page-item"><a class="page-link" href="#">Comidas</a></li>
+                <li class="page-item"><a class="page-link" href="#">Desayunos</a></li>
             </ul>
-            <button class="btn btn-primary bontonVentas d-flex align-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight"><i class="fa-solid fa-money-bill-trend-up"></i>
+            <button class="btn btn-primary bontonVentas d-flex align-content-center" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                    class="fa-solid fa-money-bill-trend-up"></i>
             </button>
         </nav>
-        <div class="row g-0 text-center mt-2">
-            <div class="col-sm-5 col-md-8  ">
-                <div class="row row-cols-1 row-cols-md-3 g-4 ms-4">
+        <div class="row mt-2 text-center ">
+            <div class="col-sm-6  col-md-8  ">
+                <div class="row  row-cols-md-3 g-4 ms-4">
                     <div class="col ">
                         <div class="card " style="width: 18rem;">
                             <div class="w-auto fondo-card-1">
@@ -176,18 +177,90 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3 rounded-start caja-fondo  ">
-                <div class="card barra-pedidos " style="width: 18rem; " ;>
-
+            <div class="col-4 col-md-4 rounded-start">
+                <div class=" w-100 " style="width: 18rem; " ;>
+                    <div class="accordion " id="accordionExample">
+                        <p class="fs-3 fw-bold">Categorias creadas</p>
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-semibold text-white acordeonMenu" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Pan
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold text-white acordeonMenu"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Bebidas calientes
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold text-white acordeonMenu"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    Jugos
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold text-white acordeonMenu"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    Postres
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold text-white acordeonMenu"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    Desayunos
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    </div>
-    </div>
-
-
     <div class="offcanvas offcanvas-end ventanaEmergente" tabindex="-1" id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel" style="background-color:#2e017c;">
         <div class="offcanvas-header">
@@ -197,7 +270,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="">
-            <div class="card barra-pedidos " style="width: 18rem; background-color:#2e017c;">
+            <div class="card barra-pedidos text-center" style="width: 18rem; background-color:#2e017c;">
                 <img src="img/logo panaderia.png" class="w-25 foto-perfil" alt="...">
                 <div class="card-body mb-4">
                     <h5 class="card-title text-light">PANADERIA RICITOS DE ORO</h5>
@@ -225,7 +298,6 @@
                                         borderColor: '#fff',
                                         backgroundColor: '#fff',
                                         color: '#fff',
-
                                     }]
                                 },
                                 options: {
@@ -237,7 +309,6 @@
                                 }
                             });
                         </script>
-
                     </div>
                 </div>
                 <div class="mt-5 d-flex img-thumbnail  caja-resumen-dia border-0 " style="background-color: #4100b9;">
@@ -270,10 +341,8 @@
                                     hoverOffset: 4
                                 }
                             }
-
                             );
                         </script>
-
                     </div>
                 </div>
             </div>
