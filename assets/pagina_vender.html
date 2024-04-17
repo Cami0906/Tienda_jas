@@ -74,17 +74,23 @@
         </div>
     </nav>
     <div>
-        <nav aria-label="...">
+        <nav aria-label="..." class="d-flex justify-content-between">
             <ul class="ms-5  pagination pagination-sm categorias">
                 <li class="page-item " aria-current="page">
-                    <span class="page-link">Panes</span>
+                    <span class="page-link">Pan</span>
                 </li>
                 <li class="page-item"><a class="page-link" href="#">Bebidas calientes</a></li>
                 <li class="page-item"><a class="page-link" href="#">Jugos</a></li>
                 <li class="page-item"><a class="page-link" href="#">Postres</a></li>
-                <li class="page-item"><a class="page-link" href="#">Comidas</a></li>
+                <li class="page-item"><a class="page-link" href="#">Desayunos</a></li>
             </ul>
+            <button class="btn btn-primary bonton_ventas d-flex align-content-center
+            " type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                    class="fa-solid fa-money-bill-trend-up"></i>
+            </button>
         </nav>
+
         <div class="row g-0 text-center mt-2">
             <div class="col-sm-5 col-md-8  ">
                 <div class="row row-cols-1 row-cols-md-3 g-4 ms-4">
@@ -154,7 +160,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3 rounded-start caja-fondo  " style=>
+            <div class="col-4 col-md-4 rounded-start caja-fondo  " style=>
                 <div class="card barra-pedidos " style="width: 18rem" ;>
                     <div class="ms-4 mt-3 text-start fs-1 fw-bold">
                         <p>Pedido</p>
@@ -209,7 +215,9 @@
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5 d-flex" id="exampleModalToggleLabel">Total a pagar: <p class="fs-3 ms-2 fw-bold">$35.000</p></h1>
+                                        <h1 class="modal-title fs-5 d-flex" id="exampleModalToggleLabel">Total a pagar:
+                                            <p class="fs-3 ms-2 fw-bold">$35.000</p>
+                                        </h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
@@ -272,9 +280,95 @@
             </div>
         </div>
     </div>
+
+    <div class="offcanvas offcanvas-end ventanaEmergente" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel" style="background-color:#2e017c;">
+        <div class="offcanvas-header">
+            <div class="perfil ms-2">
+                <P class="fw-medium text-light">Admin</P>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="">
+            <div class="card text-center barra-emergente" style="width: 18rem; background-color:#2e017c;">
+                <img src="img/logo panaderia.png" class="w-25 foto-perfil" alt="...">
+                <div class="card-body mb-4">
+                    <h5 class="card-title text-light">PANADERIA RICITOS DE ORO</h5>
+                    <div class="text-light">
+                        <div>
+                            <canvas id="hora"></canvas>
+                        </div>
+
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                        <script>
+                            const hora = document.getElementById('hora');
+                            Chart.defaults.color = '#fff';
+                            Chart.defaults.backgroundColor = '#fff';
+                            new Chart(hora, {
+                                type: 'line',
+                                data: {
+                                    labels: ['10 am', '11 am', '12 am', '1 pm', '2 am', '3 am', '4 am', '5 am'],
+                                    pointBorderColor: '#fff',
+                                    datasets: [{
+                                        label: 'ventas x hora',
+                                        data: [10, 18, 9, 8, 5, 6, 3, 15],
+                                        borderWidth: 1,
+                                        Color: '#fff',
+                                        borderColor: '#fff',
+                                        backgroundColor: '#fff',
+                                        color: '#fff',
+                                    }]
+                                },
+                                options: {
+                                    scales: {
+                                        y: {
+                                            beginAtZero: true
+                                        }
+                                    }
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="mt-5 d-flex img-thumbnail  caja-resumen-dia border-0 " style="background-color: #4100b9;">
+                    <div class="">
+                        <p class="text-start ms-1 mb-0 text-light fw-bold fs-4">Venta hoy</p>
+                        <p class="text-start ms-3 text-light mb-0 fw-semibold fs-3">$35.000</p>
+                        <p class="text-start ms-1 mb-0  text-light fw-bold fs-4">Meta:</p>
+                        <p class="text-start ms-3 text-light fw-semibold fs-3">$500.000</p>
+                    </div>
+                    <div class="grafico-dona">
+                        <div>
+                            <canvas id="myChart"></canvas>
+                        </div>
+
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                        <script>
+                            const ctx = document.getElementById('myChart');
+                            Chart.defaults.color = '#fff';
+
+                            new Chart(ctx, {
+                                type: 'doughnut',
+                                data: {
+                                    labels: ['Venta', 'meta',],
+                                    datasets: [{
+                                        label: 'venta',
+                                        data: [14, 86],
+                                        borderWidth: 1,
+                                    }],
+                                    hoverOffset: 4
+                                }
+                            }
+                            );
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
