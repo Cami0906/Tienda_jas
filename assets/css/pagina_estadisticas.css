@@ -21,3 +21,11 @@
 .grafico-barra{
     width: 700px;
 }
+
+.gastos-barra{
+    width: 800px !important;
+}
+
+.gastos-mes{
+    width: 850px !important;
+}

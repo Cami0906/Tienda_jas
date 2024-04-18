@@ -128,7 +128,7 @@
                                 labels: ['Venta', 'meta',],
                                 datasets: [{
                                     label: 'venta',
-                                    data: [500000,2000000 ],
+                                    data: [500000, 2000000],
                                     borderWidth: 1,
                                 }],
                                 hoverOffset: 4
@@ -246,7 +246,7 @@
                         });
                     </script>
 
-                </div>                
+                </div>
             </div>
             <div class="card ventas-semana m-3 ">
                 <div class="card-body grafico-barra">
@@ -262,10 +262,10 @@
                         new Chart(venta_hora, {
                             type: 'line',
                             data: {
-                                labels: ['10 am', '11 am', '12 pm', '1 pm', '2 pm', '3 pm', '4 pm','5 pm','6 pm'],
+                                labels: ['10 am', '11 am', '12 pm', '1 pm', '2 pm', '3 pm', '4 pm', '5 pm', '6 pm'],
                                 datasets: [{
                                     label: 'productos vendidos por hora',
-                                    data: [ 5, 20, 25, 40, 32, 22,35,40,15],
+                                    data: [5, 20, 25, 40, 32, 22, 35, 40, 15],
                                     borderWidth: 1
                                 }]
                             },
@@ -279,8 +279,48 @@
                         });
                     </script>
 
-                </div>                
+                </div>
             </div>
+        </div>
+        <div class=" align-content-center">
+            <div class="card gastos-mes m-3 justify-content-center ">
+                <div class="card-body gastos-barra">
+                    <div>
+                        <canvas id="gastosMes"></canvas>
+                    </div>
+
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                    <script>
+                        const gastos = document.getElementById('gastosMes');
+
+                        new Chart(gastos, {
+                            type: 'bar',
+                            data: {
+                                labels: ['Gastos', 'Ventas'],
+                                datasets: [{
+                                    label: 'ventas y gastos ',
+                                    data: [ 100.000, 700.000],
+                                    borderWidth: 1,
+                                    backgroundColor: [
+                                        'rgb(255, 99, 132)',
+                                        'rgb(54, 162, 235)'
+                                    ]
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    y: {
+                                        beginAtZero: true
+                                    }
+                                }
+                            }
+                        });
+                    </script>
+
+                </div>
+            </div>
+
         </div>
     </section>
 
