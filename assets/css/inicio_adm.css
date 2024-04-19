@@ -2,7 +2,7 @@
 
 
 article {
-    height: 120vh;
+    height: 130vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -12,20 +12,21 @@ article {
 }
 
 .caja {
-    padding:px;
-    margin-top: 171px;
+    
+    margin-top: 45px;
+    margin-bottom: 80px;
     border: 1px solid #bcbcbc;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px;
     background: #B993D6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  
+background: linear-gradient(to right, #8CA6DB, #B993D6); 
 
     
     width: 493px;
-    height: 573px;
+    height: 610px;
     padding-right: 30px;
     padding-left:15px;
-    padding-top: 10px;
+  
     padding-bottom: 44px;
     border-radius: 10px;
 
@@ -53,9 +54,23 @@ color:#7a7676;
 }
     
 
+.help{
+
+}
+
+.bkgt2{
+  background: #acb6e5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
+}
+.tc{
+  background: #acb6e5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
 
 .placeholder input{
 border:none;
@@ -75,7 +90,7 @@ width: 317px;
 display:flex;
 justify-content: center;
    width: 442px;
-   background:#aaa;
+   background:#1d1a1a;
    margin-bottom: 20px;
    margin-top: 20px;
     
@@ -87,7 +102,7 @@ justify-content: center;
     display:flex;
     justify-content: center;
        width: 442px;
-       background:#aaa;
+       background:#161515;
        margin-bottom: 20px;
        margin-top: 20px;
         
@@ -147,6 +162,10 @@ border-bottom-style:solid;
 background: rgb(170,11,245);
     background: linear-gradient(90deg, rgba(170,11,245,0.2637429971988795) 43%, rgba(16,77,236,0.14049369747899154)61%);
 
+}
+.contraseña{
+  margin-top: 10px;
+  width:auto;
 }
 
 
