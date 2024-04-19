@@ -1,0 +1,35 @@
+body{
+    overflow-x: hidden;
+    background: rgb(170,11,245);
+    background: linear-gradient(90deg, rgba(170,11,245,0.2637429971988795) 43%, rgba(16,77,236,0.14049369747899154) 61%);
+}
+
+.texto1{
+    font-weight: bold;
+}
+
+.columna-menu{
+    height: 82vh;
+}
+
+.img1{
+    width: 200px;
+}
+
+.slider1{
+    width: 100%;
+}
+
+.iconos1{
+    width: 100px;
+    height: 100px;
+}
+
+.item1{
+    font-size: 4rem;
+}
+
+.boton1{
+    border: none;
+    background-color: transparent;
+}
