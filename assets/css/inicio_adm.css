@@ -6,8 +6,8 @@ article {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: rgb(170,11,245);
-    background: linear-gradient(90deg, rgba(170,11,245,0.2637429971988795) 43%, rgba(16,77,236,0.14049369747899154)61%);
+    background: rgb(68, 3, 198);
+    background: linear-gradient(90deg, rgba(84, 0, 210, 0.451) 43%, rgba(16,77,236,0.14049369747899154) 61%);
 
 }
 
